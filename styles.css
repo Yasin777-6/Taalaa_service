@@ -205,8 +205,10 @@ body {
 }
 
 .btn-android {
-    background: #3DDC84; /* Android Green */
-    color: #073042; /* Android Dark Blue */
+    background: #3DDC84;
+    /* Android Green */
+    color: #073042;
+    /* Android Dark Blue */
     padding: 1rem 2rem;
     border-radius: 0.75rem;
     text-decoration: none;
@@ -224,6 +226,50 @@ body {
     background: #32b86c;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
+}
+
+.btn-iphone {
+    background: #000000;
+    /* Apple Black */
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    border: none;
+}
+
+.btn-iphone:hover {
+    background: #1a1a1a;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-iphone-small {
+    background: #000000;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.btn-iphone-small:hover {
+    background: #1a1a1a;
+    transform: translateY(-2px);
 }
 
 .btn-android-small {
@@ -563,7 +609,8 @@ body {
     width: 100%;
     max-width: 350px;
     margin: 0 auto;
-    padding-bottom: 177.78%; /* 9:16 aspect ratio (вертикальный формат телефона) */
+    padding-bottom: 177.78%;
+    /* 9:16 aspect ratio (вертикальный формат телефона) */
     margin-bottom: 1rem;
     border-radius: 0.75rem;
     overflow: hidden;
@@ -822,6 +869,7 @@ body {
 
 /* Responsive Design */
 @media (max-width: 968px) {
+
     .hero-content,
     .cta-content {
         grid-template-columns: 1fr;
@@ -871,11 +919,11 @@ body {
     .hero-content {
         flex-direction: column;
     }
-    
+
     .hero-text {
         text-align: center;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         width: 100%;
@@ -885,13 +933,13 @@ body {
         width: 100%;
         text-align: center;
     }
-    
+
     .format-cards,
     .demo-videos,
     .solution-cards {
         flex-direction: column;
     }
-    
+
     .phone-mockup {
         max-width: 100%;
     }
@@ -982,6 +1030,7 @@ html {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -996,4 +1045,3 @@ html {
 .feature-card {
     animation: fadeInUp 0.6s ease-out;
 }
-
