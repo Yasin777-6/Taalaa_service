@@ -204,6 +204,49 @@ body {
     transform: translateY(-2px);
 }
 
+.btn-android {
+    background: #3DDC84; /* Android Green */
+    color: #073042; /* Android Dark Blue */
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    border: none;
+}
+
+.btn-android:hover {
+    background: #32b86c;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-android-small {
+    background: #3DDC84;
+    color: #073042;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.btn-android-small:hover {
+    background: #32b86c;
+    transform: translateY(-2px);
+}
+
 .hero-image {
     display: flex;
     justify-content: center;
